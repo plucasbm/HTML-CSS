@@ -1,0 +1,153 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+    --font-color: #AAAAAA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans',sans-serif;
+    background: var(--black);
+    color: #FFFFFF;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .logo{
+    width: 125px;
+    margin-right: 10px;
+}
+
+.container .nav-link{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--font-color);
+    transition: all .3s;
+}
+
+.container .nav-link:hover{
+    color: #FFFFFF;
+}
+
+.main-banner{
+    display: flex;
+    font-size: 16px;
+    background: url("../images/Filmes/iron_man_poster.jpg");
+    background-size: cover;
+    height: 70vh;
+    align-items: center;
+    
+}
+
+.container-banner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-banner .banner-logo-image{
+    width: 80%;
+    margin-left: 10px;
+}
+
+.container-banner .sinopse{
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.container-banner .links{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.container-banner .links .btn{
+    display: flex;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    letter-spacing: .5px;
+    transition: ease all .2s;
+}
+
+.container-banner .links .btn:hover{
+    opacity: .7;
+}
+
+.container-banner .links .play{
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.container-banner .links .info{
+    background-color: #777777;
+    color: #FFFFFF;
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.item{
+    transition: all .3s;
+}
+
+.item:hover{
+    transform: scale(1.05);
+}
+
+.image-card{
+    height: 20%;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.carousel{
+    width: 95%;
+    margin: 10px auto;
+}
+
+h3{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+footer{
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .contact{
+    font-size: 26px;
+}
+
+footer .contact .fab{
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+footer .contact .fab:hover{
+    transform: scale(1.2);
+}
