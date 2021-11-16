@@ -1,0 +1,455 @@
+*{
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    transition: all .2s linear;
+}
+
+nav .active a,
+nav li a:hover{
+    color: #FFFFFF;
+    background-color: #39AAE1;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url("images/bg_banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto h1,
+.texto h3{
+    color: #FFFFFF;
+    text-shadow: 0px 1px 0 #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    font-weight: normal;
+}
+
+.texto h1{
+    font-size: 70px;
+}
+
+.texto h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card{
+    height: 210px;
+    display: flex;
+}
+
+.card1,
+.card2,
+.card3{
+    flex: 1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.card1{
+    background-color: #39AAE1;
+}
+
+.card2{
+    background-color: #0079C7;
+}
+
+.card3{
+    background-color: #2B4C99;
+}
+
+.card h2{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card a{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    width: 100px;
+    padding: 5px 10px;
+}
+
+.horario{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .2px solid #DDDDDD;
+}
+
+.horario p{
+    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+#geral main{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text{
+    color: #000000;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.widget-title-bar{
+    width: 60px;
+    height: 3px;
+    background-color: #39AAE1;
+    margin-top: 10px;
+}
+
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.news-date{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    background-color: #2B4C99;
+    padding: 10px 10px;
+    margin-right: 1px;
+}
+
+.num-comments{
+    background-color: #39AAE1;
+    padding: 10px 10px;
+}
+
+.thumbnail{
+    margin-top: 30px;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+.news-title h3,
+.news-description p{
+    margin: 0;
+}
+
+.news-title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.news-description{
+    color: #5C5C5C;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+article a{
+    text-decoration: none;
+}
+
+.department-cards div{
+    flex: 1;
+    min-width: 145px;
+    min-height: 145px;
+    background-color: #39AAE1;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.appointment .text p{
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.app-infos{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.app-infos div{
+    width: 30px;
+    height: 30px;
+    background-color: #CCCCCC;
+    margin-right: 15px;
+}
+
+.app-infos a{
+    text-decoration: none;
+    color: #2B4C99;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+.footer-card{
+    display: flex;
+    flex: 1;
+}
+
+.footer-card h2{
+    font-weight: normal;
+}
+
+.footer-card p{
+    font-size: 12px;
+}
+
+.fc1,
+.fc2,
+.fc3{
+    flex: 1;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.fc1{
+    background-color: #39AAE1;
+}
+
+.fc2{
+    background-color: #0079C7; 
+}
+
+.fc3{
+    background-color: #2B4C99;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.footer-infos{
+    display: flex;
+}
+
+.footer-infos-item{
+    flex: 1;
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+
+.footer-infos .widget-title-text{
+    color: #FFFFFF;
+}
+
+.footer-copy{
+    color: #5C5C5C;
+    font-size: 12px;
+    border-top: 1px solid #2C2C2C;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+.widget-body p{
+    font-size: 14px;
+    color: #999999;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#email{
+    color: #FFFFFF;
+}
+
+.social{
+    display: flex;
+    margin-top: 20px;
+}
+
+.social div{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: #2C2C2C;
+}
+
+.post p{
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#time{
+    color: #0079C7;
+}
+
+#titulo{
+    margin-top: 20px;
+}
+
+.tweet p{
+    margin: 0;
+}
+
+.menu-mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.mm-line{
+    height: 3px;
+    background-color:#39AAE1;
+}
+
+@media (max-width: 600px){
+    .texto{
+        padding: 20px;
+    }
+    .texto h1{
+       font-size: 55px; 
+    }
+    .texto h3{
+        font-size: 17px;
+    }
+    .card{
+        height: auto;
+        flex-direction: column;
+    }
+    #geral{
+        margin-top: 70px;
+    }
+    .container{
+        flex-direction: column;
+        margin: 15px;
+    }
+    .footer-card{
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 15px;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
